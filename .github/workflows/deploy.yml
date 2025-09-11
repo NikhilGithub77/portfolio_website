@@ -1,5 +1,10 @@
 name: Build and Deploy to GitHub Pages
 
+# Grant the workflow the permissions it needs to build and publish
+permissions:
+  contents: read
+  pages: write
+
 on:
   push:
     branches:
@@ -8,9 +13,15 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Ensure the checkout step leaves credentials so we can push
+          persist-credentials: true
+          # Fetch full history (safe for gh-pages action)
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -24,8 +35,16 @@ jobs:
       - name: Build (Vite)
         run: npm run build
 
+      - name: Configure git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages
+          # Force an orphan commit to avoid history/merge issues
+          force_orphan: true
