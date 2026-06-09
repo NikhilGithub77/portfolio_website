@@ -24,6 +24,32 @@ const Projects = () => {
       category: 'AI & NLP',
     },
     {
+      title: 'AmazonDB: E-Commerce Database and Sales Analytics',
+      period: 'Jan 2025 – May 2025',
+      description: 'Designed and implemented a normalized PostgreSQL database for e-commerce orders, products, and shipping, with relational integrity, analytics-ready schema design, and scalable SQL reporting support.',
+      details: [
+        'Cleaned and quality-checked a real-world Amazon sales dataset in Python, reducing 128,976 records to 120,350 reliable records',
+        'Developed SQL analytics using joins, CTEs, and window functions for sales, product, shipping, and customer-level insights',
+        'Improved query performance by about 37% through indexing, SQL optimization, and query tuning'
+      ],
+      technologies: ['PostgreSQL', 'SQL Optimization', 'Data Engineering', 'Data Quality', 'Python', 'Analytics'],
+      image: 'https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=600',
+      category: 'Database Analytics',
+    },
+    {
+      title: 'Feedforward Neural Network for Stock Market Trend Prediction',
+      period: 'Jan 2025 – May 2025',
+      description: 'Built a deep learning regression model for stock market trend prediction using historical stock data, feature engineering, and PyTorch-based model training.',
+      details: [
+        'Collected, preprocessed, and analyzed historical stock market data for next-day price prediction across S&P 500 and sector stocks',
+        'Designed and trained a PyTorch feedforward neural network using ReLU, dropout, Adam optimizer, and MSE loss',
+        'Evaluated model behavior through prediction plots, regression performance analysis, and trend comparison'
+      ],
+      technologies: ['PyTorch', 'Deep Learning', 'Regression Modeling', 'Model Training', 'Python', 'Stock Market Data'],
+      image: 'https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=600',
+      category: 'Deep Learning',
+    },
+    {
       title: 'Multi-View Face Recognition System',
       period: 'Jan 2024 – May 2024',
       description: 'Developed a sophisticated face recognition system focusing on multi-view scenarios with advanced deep learning techniques.',
@@ -79,7 +105,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Showcasing my expertise in AI, machine learning, and data science through hands-on projects
+            Showcasing my expertise in AI, machine learning, databases, and data science through hands-on projects
           </p>
         </motion.div>
 
