@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
+import { ExternalLink, Github, Calendar } from 'lucide-react';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -13,79 +13,133 @@ const Projects = () => {
     {
       title: 'FinInsight: AI-Powered Financial Analysis Platform',
       period: 'Jan 2025 – May 2025',
-      description: 'Developed an AI-powered financial analysis system by integrating news articles, Reddit discussions, and SEC filings, enabling automated insights into market sentiment and financial trends.',
+      description:
+        'Developed an AI-powered financial analysis system by integrating news articles, Reddit discussions, and SEC filings, enabling automated insights into market sentiment and financial trends.',
       details: [
-        'Applied Natural Language Processing (NLP) techniques for sentiment analysis and topic modeling on large-scale unstructured financial text data',
+        'Applied Natural Language Processing techniques for sentiment analysis and topic modeling on large-scale unstructured financial text data',
         'Designed and implemented machine learning pipelines in Python for data preprocessing, model training, and predictive analysis',
-        'Built automated insights system for market sentiment analysis'
+        'Built an automated insights system for market sentiment analysis',
       ],
-      technologies: ['Python', 'NLP', 'TensorFlow', 'Jupyter Notebook', 'Sentiment Analysis', 'Financial Data'],
-      image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: [
+        'Python',
+        'NLP',
+        'TensorFlow',
+        'Jupyter Notebook',
+        'Sentiment Analysis',
+        'Financial Data',
+      ],
+      image:
+        'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'AI & NLP',
     },
     {
       title: 'AmazonDB: E-Commerce Database and Sales Analytics',
       period: 'Jan 2025 – May 2025',
-      description: 'Designed and implemented a normalized PostgreSQL database for e-commerce orders, products, and shipping, with relational integrity, analytics-ready schema design, and scalable SQL reporting support.',
+      description:
+        'Designed and implemented a normalized PostgreSQL database for e-commerce orders, products, and shipping, with relational integrity, analytics-ready schema design, and scalable SQL reporting support.',
       details: [
         'Cleaned and quality-checked a real-world Amazon sales dataset in Python, reducing 128,976 records to 120,350 reliable records',
         'Developed SQL analytics using joins, CTEs, and window functions for sales, product, shipping, and customer-level insights',
-        'Improved query performance by about 37% through indexing, SQL optimization, and query tuning'
+        'Improved query performance by about 37% through indexing, SQL optimization, and query tuning',
       ],
-      technologies: ['PostgreSQL', 'SQL Optimization', 'Data Engineering', 'Data Quality', 'Python', 'Analytics'],
-      image: 'https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: [
+        'PostgreSQL',
+        'SQL Optimization',
+        'Data Engineering',
+        'Data Quality',
+        'Python',
+        'Analytics',
+      ],
+      image:
+        'https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'Database Analytics',
     },
     {
       title: 'Feedforward Neural Network for Stock Market Trend Prediction',
       period: 'Jan 2025 – May 2025',
-      description: 'Built a deep learning regression model for stock market trend prediction using historical stock data, feature engineering, and PyTorch-based model training.',
+      description:
+        'Built a deep learning regression model for stock market trend prediction using historical stock data, feature engineering, and PyTorch-based model training.',
       details: [
         'Collected, preprocessed, and analyzed historical stock market data for next-day price prediction across S&P 500 and sector stocks',
         'Designed and trained a PyTorch feedforward neural network using ReLU, dropout, Adam optimizer, and MSE loss',
-        'Evaluated model behavior through prediction plots, regression performance analysis, and trend comparison'
+        'Evaluated model behavior through prediction plots, regression performance analysis, and trend comparison',
       ],
-      technologies: ['PyTorch', 'Deep Learning', 'Regression Modeling', 'Model Training', 'Python', 'Stock Market Data'],
-      image: 'https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: [
+        'PyTorch',
+        'Deep Learning',
+        'Regression Modeling',
+        'Model Training',
+        'Python',
+        'Stock Market Data',
+      ],
+      image:
+        'https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'Deep Learning',
     },
     {
       title: 'Multi-View Face Recognition System',
       period: 'Jan 2024 – May 2024',
-      description: 'Developed a sophisticated face recognition system focusing on multi-view scenarios with advanced deep learning techniques.',
+      description:
+        'Developed a sophisticated face recognition system focusing on multi-view scenarios with advanced deep learning techniques.',
       details: [
-        'Initially implemented K-Nearest Neighbors (KNN) algorithm but transitioned to advanced ArcFace algorithm for better accuracy',
-        'ArcFace significantly improved accuracy to approximately 90%, showcasing its prowess in handling complex facial features',
-        'Addressed gaps in traditional face recognition systems with advanced methodologies'
+        'Initially implemented K-Nearest Neighbors algorithm but transitioned to advanced ArcFace algorithm for better accuracy',
+        'ArcFace significantly improved accuracy to approximately 90%, showcasing its ability to handle complex facial features',
+        'Addressed gaps in traditional face recognition systems with advanced methodologies',
       ],
-      technologies: ['Python', 'OpenCV', 'ArcFace', 'Deep Learning', 'Computer Vision', 'KNN'],
-      image: 'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: [
+        'Python',
+        'OpenCV',
+        'ArcFace',
+        'Deep Learning',
+        'Computer Vision',
+        'KNN',
+      ],
+      image:
+        'https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'Computer Vision',
     },
     {
       title: 'Deep Learning Malware Analysis',
       period: 'Aug 2023 – Dec 2023',
-      description: 'Built advanced malware detection system using deep learning techniques for identifying malicious files through image-based analysis.',
+      description:
+        'Built an advanced malware detection system using deep learning techniques for identifying malicious files through image-based analysis.',
       details: [
         'Developed CNN and LSTM models for malware image detection with comparative performance evaluation',
         'Optimized hyperparameters to enhance detection accuracy and robustness against adversarial inputs',
-        'Achieved multi-class classification across 27 categories using 3-layer convolutional network with ReLU activation'
+        'Achieved multi-class classification across 27 categories using a 3-layer convolutional network with ReLU activation',
       ],
-      technologies: ['Python', 'TensorFlow', 'CNN', 'LSTM', 'Deep Learning', 'Cybersecurity'],
-      image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: [
+        'Python',
+        'TensorFlow',
+        'CNN',
+        'LSTM',
+        'Deep Learning',
+        'Cybersecurity',
+      ],
+      image:
+        'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'Deep Learning',
     },
     {
       title: 'Rice Varieties Classification with ML',
       period: 'Jan 2023 – May 2023',
-      description: 'Machine learning project for automated classification of rice varieties using advanced feature extraction and multiple ML algorithms.',
+      description:
+        'Machine learning project for automated classification of rice varieties using advanced feature extraction and multiple ML algorithms.',
       details: [
-        'Pre-processed rice grain images and extracted 106 features for comprehensive analysis',
+        'Preprocessed rice grain images and extracted 106 features for comprehensive analysis',
         'Implemented and benchmarked multiple ML algorithms including Decision Tree, SVM, and Random Forest',
-        'Achieved 97% accuracy using Decision Tree model on a dataset of 75,000 samples'
+        'Achieved 97% accuracy using Decision Tree model on a dataset of 75,000 samples',
       ],
-      technologies: ['Python', 'Scikit-learn', 'Decision Tree', 'SVM', 'Random Forest', 'Image Processing'],
-      image: 'https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg',
+      technologies: [
+        'Python',
+        'Scikit-learn',
+        'Decision Tree',
+        'SVM',
+        'Random Forest',
+        'Image Processing',
+      ],
+      image:
+        'https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=600',
       category: 'Machine Learning',
     },
   ];
@@ -103,7 +157,9 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Featured Projects
           </h2>
+
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-8"></div>
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Showcasing my expertise in AI, machine learning, databases, and data science through hands-on projects
           </p>
@@ -112,7 +168,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.title}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -125,6 +181,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
+
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
@@ -138,20 +195,32 @@ const Projects = () => {
                     <Calendar size={14} />
                     <span>{project.period}</span>
                   </div>
+
                   <div className="flex items-center space-x-2">
                     <motion.button
+                      type="button"
+                      aria-label="View GitHub repository"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="p-2 bg-gray-100 rounded-full hover:bg-primary-100 transition-colors"
                     >
-                      <Github size={16} className="text-gray-600 hover:text-primary-600" />
+                      <Github
+                        size={16}
+                        className="text-gray-600 hover:text-primary-600"
+                      />
                     </motion.button>
+
                     <motion.button
+                      type="button"
+                      aria-label="View live project"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="p-2 bg-gray-100 rounded-full hover:bg-primary-100 transition-colors"
                     >
-                      <ExternalLink size={16} className="text-gray-600 hover:text-primary-600" />
+                      <ExternalLink
+                        size={16}
+                        className="text-gray-600 hover:text-primary-600"
+                      />
                     </motion.button>
                   </div>
                 </div>
@@ -165,8 +234,11 @@ const Projects = () => {
                 </p>
 
                 <ul className="space-y-2 mb-4">
-                  {project.details.slice(0, 2).map((detail, detailIndex) => (
-                    <li key={detailIndex} className="flex items-start space-x-2 text-sm text-gray-600">
+                  {project.details.slice(0, 2).map((detail) => (
+                    <li
+                      key={detail}
+                      className="flex items-start space-x-2 text-sm text-gray-600"
+                    >
                       <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
                       <span>{detail}</span>
                     </li>
@@ -174,14 +246,15 @@ const Projects = () => {
                 </ul>
 
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                  {project.technologies.slice(0, 4).map((tech) => (
                     <span
-                      key={techIndex}
+                      key={tech}
                       className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
                     >
                       {tech}
                     </span>
                   ))}
+
                   {project.technologies.length > 4 && (
                     <span className="bg-primary-100 text-primary-700 px-2 py-1 rounded text-xs font-medium">
                       +{project.technologies.length - 4} more
